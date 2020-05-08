@@ -1,0 +1,129 @@
+
+Lenovo@admin MINGW64 ~
+$ cd
+
+Lenovo@admin MINGW64 ~
+$ cd /c
+
+Lenovo@admin MINGW64 /c
+$ ls
+'$Recycle.Bin'/             Intel/                  Recovery/
+ bootmgr                    pagefile.sys            swapfile.sys
+ BOOTNXT                    PerfLogs/              'System Volume Information'/
+'Documents and Settings'@  'Program Files'/         Users/
+ Flutter_sdk/              'Program Files (x86)'/   Valve/
+ hiberfil.sys               ProgramData/            Windows/
+
+Lenovo@admin MINGW64 /c
+$ ls
+'$Recycle.Bin'/             Intel/                  swapfile.sys
+ bootmgr                    pagefile.sys           'System Volume Information'/
+ BOOTNXT                    PerfLogs/               Users/
+'Documents and Settings'@  'Program Files'/         Valve/
+ Flutter_sdk/              'Program Files (x86)'/   Windows/
+ git/                       ProgramData/
+ hiberfil.sys               Recovery/
+
+Lenovo@admin MINGW64 /c
+$ cd git/
+
+Lenovo@admin MINGW64 /c/git
+$ ls
+
+Lenovo@admin MINGW64 /c/git
+$ git config --global user.name "PinalChothani"
+
+Lenovo@admin MINGW64 /c/git
+$ git config --global user.email pinalchothani.glsica15@gmail.com
+
+Lenovo@admin MINGW64 /c/git
+$ git clone https://github.com/PinalChothani/Flutter_Logindemo.git
+Cloning into 'Flutter_Logindemo'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+Lenovo@admin MINGW64 /c/git
+$ ls
+Flutter_Logindemo/
+
+Lenovo@admin MINGW64 /c/git
+$ cd Flutter_Logindemo/
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ ls
+README.md
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ ls
+README.md  test
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ ls
+README.md  test.txt
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git add test.txt
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git commit -m "First Commit" test.txt
+[master 561acea] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PinalChothani/Flutter_Logindemo.git
+   d1fdaf7..561acea  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git commit -m "Second Commit" test.txt
+[master 111ff3d] Second Commit
+ 1 file changed, 2 insertions(+)
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/PinalChothani/Flutter_Logindemo.git
+   561acea..111ff3d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Lenovo@admin MINGW64 /c/git/Flutter_Logindemo (master)
+$
